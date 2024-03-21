@@ -1,0 +1,42 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Section styling */
+.bio,
+.discography,
+.awards {
+  margin-bottom: 20px;
+}
+
+.bio-image-right {
+  float: right;
+  margin-right: 20px;
+  width: 250px;
+  height: auto;
+}
+
+.bio-image-left {
+  float: left;
+  margin-right: 20px;
+  width: 250px;
+  height: auto;
+}
+
+/* Footer styling */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  .header,
+  .footer {
+    padding: 10px;
+  }
+}

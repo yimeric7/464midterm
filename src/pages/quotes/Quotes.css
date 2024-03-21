@@ -1,0 +1,15 @@
+/* Footer styling */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: sticky;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  .footer {
+    padding: 10px;
+  }
+}
