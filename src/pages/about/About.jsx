@@ -5,7 +5,7 @@ import KanyePic2 from '../../assets/kanye2.jpg';
 
 function About() {
   return (
-    <div>
+    <div style={{marginTop: '3%'}}>
       <Navbar />
       <div className="app">
         <header className="header">

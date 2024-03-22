@@ -40,7 +40,7 @@ function Songs() {
   // }, []);
 
   return (
-    <div>
+    <div style={{marginTop: '15%'}}>
       <Navbar />
       <TrackEmbed srcUrl="https://open.spotify.com/embed/track/4EWCNWgDS8707fNSZ1oaA5?utm_source=generator" />
       {/* <div>
