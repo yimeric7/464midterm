@@ -1,6 +1,7 @@
 import Navbar from '../../components/navbar/Navbar.jsx';
 import React, { useState, useEffect } from 'react';
 import KanyeQuotePic from '../../assets/kanye_west-removebg-preview.png';
+import Timestamp from '../../components/timestamp/Timestamp.jsx';
 import './Quotes.css';
 
 function censorCussWordsDynamically(text) {
@@ -31,6 +32,11 @@ function Quotes() {
     fetchQuote();
   }, []);
 
+  const handleShareToTwitter = () => {
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent('"' + quote + '" - Kanye West')}&hashtags=KanyeWest`;
+    window.open(twitterUrl, '_blank');
+  };
+
   return (
     <div style={{marginTop: '12%'}}>
       <Navbar />
@@ -39,10 +45,13 @@ function Quotes() {
       <div>
         <button onClick={fetchQuote}>Get New Quote</button>
       </div>
+      <br/>
+      <button onClick={handleShareToTwitter}>Share to Twitter</button>
       <img src={KanyeQuotePic} width="100%" />
       <footer className="footer">
         <p>Page created for educational purposes.</p>
       </footer>
+      <Timestamp />
     </div>
   );
 }

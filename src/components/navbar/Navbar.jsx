@@ -17,6 +17,12 @@ const Navbar = () => {
       <NavLink to="/songs" activeClassName="active">
         Songs
       </NavLink>
+      <NavLink to="/contact" activeClassName="active">
+        Contact
+      </NavLink>
+      <NavLink to="/game" activeClassName="active">
+        Game
+      </NavLink>
     </nav>
   );
 };

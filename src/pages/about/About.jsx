@@ -2,6 +2,14 @@ import Navbar from '../../components/navbar/Navbar.jsx';
 import './About.css';
 import KanyePic1 from '../../assets/kanye1.png';
 import KanyePic2 from '../../assets/kanye2.jpg';
+import KanyePic3 from '../../assets/kanye3.jpg';
+import KanyePic4 from '../../assets/kanye4.jpg';
+import KanyePic5 from '../../assets/kanye5.jpg';
+import Timestamp from '../../components/timestamp/Timestamp.jsx';
+import ImageCarousel from '../../components/image-carousel/ImageCarousel.jsx';
+
+
+const images = [KanyePic3, KanyePic4, KanyePic5];
 
 function About() {
   return (
@@ -57,6 +65,7 @@ function About() {
             generation.
           </p>
         </section>
+        <ImageCarousel images={images}/>
         <section className="discography">
           <h2>Discography</h2>
           <ul>
@@ -105,6 +114,7 @@ function About() {
           <p>Page created for educational purposes.</p>
         </footer>
       </div>
+      <Timestamp />
     </div>
   );
 }
